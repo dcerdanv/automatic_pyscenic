@@ -4,7 +4,7 @@ description: each row of seeds.tsv represents a pyscenic seed
 
 properties:
     seed_ID:
-        type: string
+        type: integer
         description: pyscenic seed
 
 required:

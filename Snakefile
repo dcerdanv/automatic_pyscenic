@@ -12,7 +12,7 @@ LOGDIR = config['logdir']
 
 #### LOAD SAMPLES TABLE ###
 seeds = pd.read_table(config["seeds"]).set_index("seed_ID", drop=False)
-validate(samples, schema="schemas/seeds.schema.yaml")
+validate(seeds, schema="schemas/seeds.schema.yaml")
 
 
 #### GLOBAL scope functions ####
