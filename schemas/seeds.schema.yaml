@@ -1,0 +1,11 @@
+$schema: "http://json-schema.org/draft-07/schema#"
+
+description: each row of seeds.tsv represents a pyscenic seed
+
+properties:
+    seed_ID:
+        type: string
+        description: pyscenic seed
+
+required:
+    - seed_ID

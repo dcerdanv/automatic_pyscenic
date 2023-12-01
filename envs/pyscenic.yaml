@@ -1,0 +1,12 @@
+name: pyscenic
+
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  - python=3.7
+  - pip
+  - pip:
+    - pyscenic

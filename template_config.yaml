@@ -1,0 +1,29 @@
+# path or URL to sample sheet
+seeds: seeds.tsv
+
+# path to the results directory
+outdir: 'results'
+
+# path to the logs directory
+logdir: 'logs'
+
+
+parameters:
+    pyscenic:
+        loom_matrix: "mat.loom"
+        tfs_file: "tfs.txt" 
+        method: "grnboost2"
+        num_workers: 10
+        extra: ""
+
+
+resources:
+    default:
+        threads: 1
+        mem_mb:  4096
+        runtime: 10
+
+    pyscenic:
+        threads: 20
+        mem_mb:  81920
+        runtime: 840
